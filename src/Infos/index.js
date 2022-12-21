@@ -11,7 +11,7 @@ export default function Infos() {
   useEffect(() => {
     async function loadCharacters() {
       const response = await api.get(`api/heydies/characters?token=${key}`);
-      console.log(response.data);
+      //console.log(response.data); 
       setCharacters(response.data);
       setLoading(false);
     }
